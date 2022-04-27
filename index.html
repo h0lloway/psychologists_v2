@@ -71,8 +71,13 @@
   <!-- NoUi slider -->
   <script defer src="js/nouislider.min.js"></script>
 
+  <!-- JustValidate -->
+  <script defer src="js/inputmask.min.js"></script>
+  <script defer src="js/just-validate.min.js"></script>
+
   <!-- my JS -->
   <script defer src="js/myChoices.js"></script>
+  <script defer src="js/myValidate.js"></script>
   <script defer src="js/myModals.js"></script>
   <script defer src="js/main.js"></script>
 </head>
@@ -808,132 +813,147 @@
 
 	</main>
 	<footer class="footer">
-	<div class="container footer__container">
+  <div class="container footer__container">
 
-		<div class="footer__top top">
-			<div class="top__left left">
-				<ul class="left__list list-reset">
-					<li class="left__list-item">
-						<a class="left__list-item-link" href="#">Тесты</a>
-					</li>
-					<li class="left__list-item">
-						<a class="left__list-item-link" href="#">Блог</a>
-					</li>
-					<li class="left__list-item">
-						<a class="left__list-item-link" href="#">Контакты</a>
-					</li>
-				</ul>
+    <div class="footer__top top">
+      <div class="top__left left">
+        <ul class="left__list list-reset">
+          <li class="left__list-item">
+            <a class="left__list-item-link" href="#">Тесты</a>
+          </li>
+          <li class="left__list-item">
+            <a class="left__list-item-link" href="#">Блог</a>
+          </li>
+          <li class="left__list-item">
+            <a class="left__list-item-link" href="#">Контакты</a>
+          </li>
+        </ul>
 
-				<ul class="left__social list-reset">
-					<li class="left__social-item">
-						<a class="left__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="left__social-item">
-						<a class="left__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#vk"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="left__social-item">
-						<a class="left__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#twitter"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="left__social-item">
-						<a class="left__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#telegram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="left__social-item">
-						<a class="left__social-item-link" href="#">
-							<svg class="social" width="30" height="30">
-								<use xlink:href="img/sprite.svg#inst"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
+        <ul class="left__social list-reset">
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="left__social-item">
+            <a class="left__social-item-link" href="#">
+              <svg class="social" width="30" height="30">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-			<div class="top__mid mid">
-				<span>
-					Внимание! Если вам срочно необходима психологическая помощь, а&nbsp;также в&nbsp;ситуациях угрожающих жизни
-					и&nbsp;здоровью, мы&nbsp;рекомендуем обратиться в&nbsp;эти важные организации: срочная психологическая помощь.
-				</span>
-			</div>
+      <div class="top__mid mid">
+        <span>
+          Внимание! Если вам срочно необходима психологическая помощь, а&nbsp;также в&nbsp;ситуациях угрожающих жизни
+          и&nbsp;здоровью, мы&nbsp;рекомендуем обратиться в&nbsp;эти важные организации: срочная психологическая помощь.
+        </span>
+      </div>
 
-			<div class="top__right right">
-				<button class="right__btn my-btn purple-btn">Вход для специалистов</button>
-				<a class="right__link" href="#">Написать в техподдержку</a>
+      <div class="top__right right">
+        <button class="right__btn my-btn purple-btn">Вход для специалистов</button>
+        <a class="right__link" href="#">Написать в техподдержку</a>
 
-				<ul class="right__social list-reset">
-					<li class="right__social-item">
-						<a class="right__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="right__social-item">
-						<a class="right__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#vk"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="right__social-item">
-						<a class="right__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#twitter"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="right__social-item">
-						<a class="right__social-item-link" href="#">
-							<svg class="social" width="24" height="24">
-								<use xlink:href="img/sprite.svg#telegram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="right__social-item">
-						<a class="right__social-item-link" href="#">
-							<svg class="social" width="23" height="23">
-								<use xlink:href="img/sprite.svg#inst"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
+        <ul class="right__social list-reset">
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg class="social" width="24" height="24">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="right__social-item">
+            <a class="right__social-item-link" href="#">
+              <svg width="23" height="25" viewbox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1482 0.233643H6.85182C3.07371 0.233643 0 3.42962 0 7.35801V17.0241C0 20.9525 3.07371 24.1485 6.85182 24.1485H16.1482C19.9263 24.1485 23 20.9525 23 17.0241V7.35801C23 3.42962 19.9262 0.233643 16.1482 0.233643ZM20.6862 17.0241C20.6862 19.6301 18.6544 21.7427 16.1482 21.7427H6.85182C4.34556 21.7427 2.3138 19.6301 2.3138 17.0241V7.35801C2.3138 4.75201 4.34556 2.63948 6.85182 2.63948H16.1482C18.6544 2.63948 20.6862 4.75201 20.6862 7.35801V17.0241Z"
+                  fill="white" />
+                <path
+                  d="M11.5 6.2124C8.4673 6.2124 6 8.89446 6 12.1911C6 15.4877 8.4673 18.1698 11.5 18.1698C14.5327 18.1698 17 15.4878 17 12.1911C17 8.89442 14.5327 6.2124 11.5 6.2124ZM11.5 15.8444C9.64392 15.8444 8.1393 14.2088 8.1393 12.1911C8.1393 10.1735 9.64396 8.53792 11.5 8.53792C13.3561 8.53792 14.8607 10.1735 14.8607 12.1911C14.8607 14.2087 13.356 15.8444 11.5 15.8444Z"
+                  fill="url(#paint0_linear_59_2)" />
+                <path
+                  d="M17.5 7.20884C18.3284 7.20884 19 6.53965 19 5.71416C19 4.88867 18.3284 4.21948 17.5 4.21948C16.6716 4.21948 16 4.88867 16 5.71416C16 6.53965 16.6716 7.20884 17.5 7.20884Z"
+                  fill="white" />
+                <defs>
+                  <lineargradient id="paint0_linear_59_2" x1="11.5" y1="23.6821" x2="11.5" y2="0.812466"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" />
+                  </lineargradient>
+                </defs>
+              </svg>
 
-			</div>
-		</div>
+            </a>
+          </li>
+        </ul>
 
-		<div class="footer__bottom bottom">
-			<ul class="bottom__list list-reset">
-				<li class="bottom__list-item">
-					2021 Корпорация Психологии: консультации&nbsp;психолога&nbsp;онлайн
-				</li>
-				<li class="bottom__list-item">
-					<a class="bottom__list-item-link" href="#">
-						Политика конфиденциальности
-					</a>
-				</li>
-				<li class="bottom__list-item">
-					<a class="bottom__list-item-link" href="#">
-						Пользовательское соглашение
-					</a>
-				</li>
-			</ul>
-		</div>
+      </div>
+    </div>
 
-	</div>
+    <div class="footer__bottom bottom">
+      <ul class="bottom__list list-reset">
+        <li class="bottom__list-item">
+          2021 Корпорация Психологии: консультации&nbsp;психолога&nbsp;онлайн
+        </li>
+        <li class="bottom__list-item">
+          <a class="bottom__list-item-link" href="#">
+            Политика конфиденциальности
+          </a>
+        </li>
+        <li class="bottom__list-item">
+          <a class="bottom__list-item-link" href="#">
+            Пользовательское соглашение
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 </footer>
 </body>
 
