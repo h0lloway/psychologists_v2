@@ -292,8 +292,8 @@ body.disable-scroll .header {
           }
 
           .choices[data-type*=select-one].is-open:after {
-            top: 55%;
-            transform: rotate(33deg);
+            transform: rotate(-90deg);
+            top: 43%;
           }
 
           .choices__inner {
@@ -306,16 +306,6 @@ body.disable-scroll .header {
             border: 2px solid #A7A7A7;
             border-radius: 10px;
           }
-
-          // .choices__inner:hover {
-          //   border-color: var(--purple-color);
-          // }
-
-          // .is-focused .choices__inner,
-          // .is-open .choices__inner {
-          //   background: #F8EFFF;
-          //   border-color: var(--purple-color);
-          // }
 
           .is-open .choices__inner {
             border-radius: 10px;

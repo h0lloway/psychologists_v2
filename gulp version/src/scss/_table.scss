@@ -73,10 +73,9 @@
 
       &__list {
 
-        padding: 5px 12px 8px 46px;
+        padding: 5px 12px 8px 34px;
         border: 1px solid var(--purple-color);
         border-radius: 4px;
-        list-style-type: disc;
       }
 
       &__list-item {
@@ -84,14 +83,23 @@
         line-height: 138.19%;
       }
 
+      &__list-item::before {
+        content: "\2022";
+        /* юникод точки */
+        color: var(--main-black);
+        /* Менять цвет */
+        font-weight: bold;
+        /* Менять жирность */
+        display: inline-block;
+        /* Расстояние между точкой и текстом */
+        width: 1em;
+        /* Задать значение расстояния */
+      }
+
       &__list-item:not(:last-child) {
         margin-bottom: 8px;
       }
 
-      &__list-item::marker {
-        width: 1px;
-        height: 1px;
-      }
 
       .price {
 
