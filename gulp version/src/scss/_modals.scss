@@ -285,7 +285,7 @@ body.disable-scroll .header {
             width: 8px;
             z-index: 3;
             top: 45%;
-            right: 55px;
+            right: 40px;
             border: 7px solid transparent;
             border-top: 11px solid #F9A068;
             transition: all .3s ease;
@@ -576,7 +576,125 @@ body.disable-scroll .header {
   }
 }
 
+.pay-thanks {
 
+  // display: none;
+
+  width: 897px;
+  max-width: 897px;
+  height: 562px;
+
+  background: var(--white-color);
+  box-shadow: 0px 3px 16px rgba(118, 96, 220, 0.15);
+  border-radius: 8px;
+
+
+  .wrap {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .content {
+
+      text-align: center;
+
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 107.19%;
+    }
+
+
+  }
+
+  .wrap::before {
+    content: "";
+    position: absolute;
+
+    top: 215px;
+    left: 195px;
+
+    width: 510px;
+    height: 331px;
+
+    background-image: url(../img/modal-bg-full.webp);
+    background-repeat: no-repeat;
+  }
+
+  .wrap::after {
+    content: "";
+    position: absolute;
+
+    top: 208px;
+    left: 302px;
+
+    width: 294px;
+    height: 294px;
+
+    background-image: url(../img/modal-like.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.free-thanks {
+
+  // display: none;
+
+  width: 897px;
+  max-width: 897px;
+  height: 562px;
+
+  background: var(--white-color);
+  box-shadow: 0px 3px 16px rgba(118, 96, 220, 0.15);
+  border-radius: 8px;
+
+
+  .wrap {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .content {
+
+      text-align: center;
+
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 107.19%;
+    }
+
+
+  }
+
+  .wrap::before {
+    content: "";
+    position: absolute;
+
+    top: 215px;
+    left: 195px;
+
+    width: 510px;
+    height: 331px;
+
+    background-image: url(../img/modal-bg-full.webp);
+    background-repeat: no-repeat;
+  }
+
+  .wrap::after {
+    content: "";
+    position: absolute;
+
+    top: 208px;
+    left: 302px;
+
+    width: 294px;
+    height: 294px;
+
+    background-image: url(../img/modal-like.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .question {
 
@@ -693,7 +811,6 @@ body.disable-scroll .header {
   }
 }
 
-
 .payfree {
 
   // display: none;
@@ -796,7 +913,7 @@ body.disable-scroll .header {
         }
 
         &__list.margin {
-          margin-top: -57px;
+          margin-top: -102px;
         }
 
         &__cost {
@@ -1171,6 +1288,70 @@ body.disable-scroll .header {
   }
 
   .thanks {
+    width: 360px;
+    max-width: 360px;
+
+    max-height: 439px;
+
+    .wrap {
+
+      .content {
+
+        font-size: 20px;
+      }
+    }
+
+    .wrap::before {
+      top: 145px;
+      left: 31px;
+
+      width: 310px;
+      height: 201px;
+
+      background-size: cover;
+    }
+
+    .wrap::after {
+      top: 141px;
+      left: 63px;
+      width: 240px;
+      height: 240px;
+    }
+  }
+
+  .pay-thanks {
+    width: 360px;
+    max-width: 360px;
+
+    max-height: 439px;
+
+    .wrap {
+
+      .content {
+
+        font-size: 20px;
+      }
+    }
+
+    .wrap::before {
+      top: 145px;
+      left: 31px;
+
+      width: 310px;
+      height: 201px;
+
+      background-size: cover;
+    }
+
+    .wrap::after {
+      top: 141px;
+      left: 63px;
+      width: 240px;
+      height: 240px;
+    }
+  }
+
+  .free-thanks {
     width: 360px;
     max-width: 360px;
 
