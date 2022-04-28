@@ -78,13 +78,15 @@ modalOverlay.addEventListener('click', (e) => {
 
 
 const nextBtn = document.querySelector('.next-btn')
-const qvst = document.querySelector('.question')
+const question = document.querySelector('.question')
 const payfree = document.querySelector('.payfree')
 const payment = document.querySelector('.payment')
 const freevar = document.querySelector('.freevar')
+const payvar = document.querySelector('.payvar')
 const choice1 = document.querySelector('.btn-choice-1')
 const choice2 = document.querySelector('.btn-choice-2')
 const nextFreeBtn = document.querySelector('.next-free-btn')
+const nextPayBtn = document.querySelector('.next-pay-btn')
 const thanks = document.querySelector('.thanks')
 const payThanks = document.querySelector('.pay-thanks')
 const payBtn = document.querySelector('.pay-btn')
@@ -93,7 +95,7 @@ const freeThanks = document.querySelector('.free-thanks')
 
 nextBtn.addEventListener('click', (e) => {
 
-  qvst.classList.remove('modal--visible');
+  question.classList.remove('modal--visible');
   payfree.classList.add('modal--visible');
 
 });
@@ -101,7 +103,7 @@ nextBtn.addEventListener('click', (e) => {
 choice1.addEventListener('click', (e) => {
 
   payfree.classList.remove('modal--visible');
-  payment.classList.add('modal--visible');
+  payvar.classList.add('modal--visible');
 
 });
 
@@ -119,11 +121,17 @@ nextFreeBtn.addEventListener('click', (e) => {
 
 });
 
-
 payBtn.addEventListener('click', (e) => {
 
   payment.classList.remove('modal--visible');
   payThanks.classList.add('modal--visible');
+
+});
+
+nextPayBtn.addEventListener('click', (e) => {
+
+  payvar.classList.remove('modal--visible');
+  payment.classList.add('modal--visible');
 
 });
 

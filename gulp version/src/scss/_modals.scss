@@ -1153,6 +1153,128 @@ body.disable-scroll .header {
   }
 }
 
+.payvar {
+
+  // display: none; 
+
+  position: relative;
+  max-width: 897px;
+  width: 897px;
+  min-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 16px rgba(118, 96, 220, 0.15);
+
+  .wrap {
+    padding: 55px 0 104px 108px;
+
+    .content {
+
+      &__title {
+        margin-bottom: 40px;
+      }
+
+
+      &__input {
+        margin-bottom: 40px;
+        padding: 16px 37px;
+        width: 45%;
+
+        border: 2px solid #a7a7a7;
+        border-radius: 8px;
+
+        font-size: 16px;
+        line-height: 138.19%;
+        color: #A7A7A7;
+      }
+
+      &__subtitle {
+        margin-bottom: 20px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 138.19%;
+      }
+
+      .checkboxes {
+        margin-bottom: 50px;
+
+        &__input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 22px;
+          height: 22px;
+          cursor: pointer;
+          margin: 0;
+          opacity: 0;
+          z-index: 3;
+          transition: .3s;
+        }
+
+        &__span {
+          position: relative;
+          padding-left: 36px;
+          cursor: pointer;
+          font-size: 16px;
+          line-height: 138.19%;
+          color: rgba(19, 19, 19, 0.5);
+        }
+
+        &__span::before {
+          content: "";
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          top: 0;
+          left: 0;
+          border: 2px solid rgba(19, 19, 19, 0.3);
+          background: var(--white-color);
+          cursor: pointer;
+        }
+
+        &__span::after {
+          content: "";
+          position: absolute;
+          width: 22.5px;
+          height: 22.5px;
+          top: -4px;
+          left: 3px;
+          background-image: url(../img/arrow.webp);
+          background-repeat: no-repeat;
+          background-size: contain;
+          cursor: pointer;
+          opacity: 0;
+        }
+
+        &__input:checked+span::after {
+          opacity: 1;
+        }
+
+        &__label.margin {
+          margin-left: 40px;
+        }
+      }
+
+      &__descr {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 127px;
+        right: 38px;
+
+        span {
+          padding-left: 10px;
+
+          font-size: 14px;
+          line-height: 138.19%;
+          color: rgba(19, 19, 19, 0.5);
+        }
+      }
+
+    }
+  }
+}
+
 
 @media (max-width: 830px) {
 
@@ -1537,6 +1659,39 @@ body.disable-scroll .header {
   }
 
   .freevar {
+    max-width: 360px;
+    width: 360px;
+    max-height: 100vh;
+    height: 750px;
+    overflow: scroll;
+
+    .wrap {
+      padding: 90px 20px 60px 20px;
+
+      .content {
+
+        display: flex;
+        flex-direction: column;
+
+        &__descr {
+          position: inherit;
+          order: 5;
+        }
+
+        &__input {
+          width: 100%;
+        }
+
+        &__btn {
+          order: 6;
+          width: 100%;
+          margin-top: 42px;
+        }
+      }
+    }
+  }
+
+  .payvar {
     max-width: 360px;
     width: 360px;
     max-height: 100vh;
